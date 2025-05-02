@@ -1,3 +1,8 @@
+// Cegah scroll otomatis ke hash saat pertama load
+if (window.location.hash) {
+    window.scrollTo(0, 0);
+    window.history.replaceState(null, null, ' ');
+}
 document.addEventListener('DOMContentLoaded', function() {
     // Tab Menu Functionality
     const tabBtns = document.querySelectorAll('.tab-btn');
