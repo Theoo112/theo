@@ -19,6 +19,18 @@ html {
     min-width: 100vw;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+    /* Atur durasi scroll */
+    * {
+        scroll-behavior: smooth !important;
+        scroll-timeline: auto;
+        scroll-duration: 200ms; /* Durasi sangat cepat */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
