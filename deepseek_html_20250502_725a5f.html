@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINI CAFÉ - Good Coffee, Good Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="SINI CAFÉ Logo">
+                <h1>SINI CAFÉ</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#spaces">Ruang Kami</a></li>
+                    <li><a href="#events">Acara</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Koneksi, Kreasi, Kolaborasi</h2>
+            <p>Lebih dari sekadar kopi - ruang untuk bekerja, berkarya, dan bersosialisasi</p>
+            <a href="#reservation" class="btn">Reservasi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Tentang SINI CAFÉ</h2>
+                <p>SINI CAFÉ hadir sebagai solusi bagi generasi muda Manado yang membutuhkan ruang multifungsi untuk bekerja, berkolaborasi, dan bersosialisasi. Dengan fasilitas lengkap dan suasana yang inspiratif, kami menjadi tempat di mana ide-ide besar lahir.</p>
+                <div class="vision-mission">
+                    <div class="vision">
+                        <h3>Visi Kami</h3>
+                        <p>Menjadi ruang kolaborasi dan inspirasi terkemuka bagi kaum muda dan milenial di Manado dan Indonesia yang mendukung kreativitas, produktivitas, dan koneksi sosial.</p>
+                    </div>
+                    <div class="mission">
+                        <h3>Misi Kami</h3>
+                        <ul>
+                            <li>Menyediakan suasana kafe yang seru dan asyik untuk nongkrong bersama teman</li>
+                            <li>Menawarkan fasilitas yang mendukung produktivitas</li>
+                            <li>Mengadakan workshop dan acara kreatif</li>
+                            <li>Membangun komunitas yang positif dan suportif</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="cafe-interior.jpg" alt="Interior SINI CAFÉ">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="coffee">Coffee & Tea</button>
+                <button class="tab-btn" data-tab="beverages">Non-Coffee</button>
+                <button class="tab-btn" data-tab="food">Makanan</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Coffee & Tea -->
+                <div id="coffee" class="tab-pane active">
+                    <div class="menu-category">
+                        <h3>Signature Coffee</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>SINI Latte</h4>
+                                <p>Espresso dengan susu steamed dan sentuhan karamel</p>
+                                <span>Rp 30,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>SINI Mocha</h4>
+                                <p>Perpaduan espresso, coklat, dan susu steamed</p>
+                                <span>Rp 32,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>SINI Americano</h4>
+                                <p>Espresso dengan air panas untuk rasa kopi yang kuat</p>
+                                <span>Rp 25,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3>Regular Coffee</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Espresso</h4>
+                                <p>Ekstrak kopi murni yang kuat</p>
+                                <span>Rp 20,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Cappuccino</h4>
+                                <p>Espresso dengan susu steamed dan busa susu</p>
+                                <span>Rp 25,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Iced Coffee</h4>
+                                <p>Kopi dingin dengan es batu</p>
+                                <span>Rp 25,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Non-Coffee Beverages -->
+                <div id="beverages" class="tab-pane">
+                    <div class="menu-category">
+                        <h3>Fresh Juices</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Orange Juice</h4>
+                                <p>Jus jeruk segar</p>
+                                <span>Rp 22,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Mixed Berry Juice</h4>
+                                <p>Campuran buah berry segar</p>
+                                <span>Rp 25,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3>Smoothies</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Green Smoothies</h4>
+                                <p>Smoothie sayuran hijau dengan buah</p>
+                                <span>Rp 28,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Tropical Smoothies</h4>
+                                <p>Campuran buah tropis segar</p>
+                                <span>Rp 30,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food -->
+                <div id="food" class="tab-pane">
+                    <div class="menu-category">
+                        <h3>Light Bites</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Sandwiches</h4>
+                                <p>Roti isi dengan pilihan daging atau sayuran</p>
+                                <span>Rp 25,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Croissants</h4>
+                                <p>Croissant segar dengan selai atau mentega</p>
+                                <span>Rp 15,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category">
+                        <h3>Main Courses</h3>
+                        <div class="menu-items">
+                            <div class="item">
+                                <h4>Pasta</h4>
+                                <p>Pasta dengan saus pilihan</p>
+                                <span>Rp 40,000</span>
+                            </div>
+                            <div class="item">
+                                <h4>Rice Bowl</h4>
+                                <p>Nasi dengan topping pilihan</p>
+                                <span>Rp 45,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="spaces" class="spaces">
+        <div class="container">
+            <h2>Ruang Kami</h2>
+            <p class="section-subtitle">Temukan ruang yang sesuai dengan kebutuhan Anda</p>
+            
+            <div class="space-cards">
+                <div class="space-card">
+                    <img src="work-area.jpg" alt="Area Kerja">
+                    <div class="space-info">
+                        <h3>Area Kerja</h3>
+                        <p>Dilengkapi meja ergonomis, stopkontak di setiap meja, dan Wi-Fi super cepat untuk mendukung produktivitas Anda.</p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> Wi-Fi 100 Mbps</li>
+                            <li><i class="fas fa-plug"></i> Stopkontak di setiap meja</li>
+                            <li><i class="fas fa-lightbulb"></i> Pencahayaan optimal</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="space-card">
+                    <img src="lounge-area.jpg" alt="Area Nongkrong">
+                    <div class="space-info">
+                        <h3>Area Nongkrong</h3>
+                        <p>Sofa empuk dan bean bag dengan dekorasi Instagramable untuk bersantai dan bersosialisasi dengan teman.</p>
+                        <ul>
+                            <li><i class="fas fa-couch"></i> Sofa empuk</li>
+                            <li><i class="fas fa-music"></i> Musik akustik</li>
+                            <li><i class="fas fa-camera"></i> Spot foto Instagramable</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="space-card">
+                    <img src="event-space.jpg" alt="Area Event">
+                    <div class="space-info">
+                        <h3>Area Event</h3>
+                        <p>Ruang fleksibel untuk workshop, seminar, atau pertemuan komunitas dengan kapasitas hingga 30 orang.</p>
+                        <ul>
+                            <li><i class="fas fa-projector"></i> Proyektor & sound system</li>
+                            <li><i class="fas fa-chair"></i> Tata letak fleksibel</li>
+                            <li><i class="fas fa-users"></i> Kapasitas 30 orang</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Acara & Kegiatan</h2>
+            <p class="section-subtitle">Bergabunglah dengan komunitas kreatif kami</p>
+            
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Workshop Barista Dasar</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 14.00 - 16.00 WITA</p>
+                        <p>Pelajari dasar-dasar membuat kopi dari barista profesional kami. Cocok untuk pemula yang ingin mengenal dunia kopi.</p>
+                        <a href="#" class="btn-small">Daftar Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Open Mic Night</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 19.00 - 22.00 WITA</p>
+                        <p>Panggung terbuka untuk musisi lokal. Bawa instrumenmu atau nikmati penampilan musisi lainnya.</p>
+                        <a href="#" class="btn-small">Daftar Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Networking Startup</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 10.00 - 12.00 WITA</p>
+                        <p>Bertemu dengan founder startup lokal dan pelaku bisnis digital di Manado. Diskusi dan kolaborasi.</p>
+                        <a href="#" class="btn-small">Daftar Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <a href="#" class="btn">Lihat Semua Acara</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-form">
+                <h2>Reservasi Tempat</h2>
+                <p>Pastikan tempat Anda dengan melakukan reservasi terlebih dahulu</p>
+                
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Tanggal</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Waktu</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Jumlah Orang</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3-4">3-4 Orang</option>
+                            <option value="5-6">5-6 Orang</option>
+                            <option value="7+">7+ Orang</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="area">Area yang Dipilih</label>
+                        <select id="area" name="area" required>
+                            <option value="work">Area Kerja</option>
+                            <option value="lounge">Area Nongkrong</option>
+                            <option value="event">Area Event</option>
+                            <option value="private">Ruang Privat</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Catatan Tambahan</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Kirim Reservasi</button>
+                </form>
+            </div>
+            
+            <div class="reservation-info">
+                <h3>Jam Operasional</h3>
+                <ul class="opening-hours">
+                    <li><span>Senin - Kamis:</span> 10.00 - 22.00 WITA</li>
+                    <li><span>Jumat - Minggu:</span> 11.00 - 23.30 WITA</li>
+                </ul>
+                
+                <h3>Promo Spesial</h3>
+                <div class="promo-card">
+                    <h4>Happy Hour Co-Working</h4>
+                    <p>Setiap Rabu dapatkan diskon 20% untuk area kerja</p>
+                </div>
+                
+                <div class="promo-card">
+                    <h4>Birthday Special</h4>
+                    <p>Tunjukkan KTP di hari ulang tahunmu untuk mendapatkan minuman gratis</p>
+                </div>
+                
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Hubungi Kami</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jl. Sam Ratulangi, Manado, Sulawesi Utara</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>(0431) 1234567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@sinicafe.com</p>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5973543774953!2d124.8374157147536!3d1.5018983619711628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32870f8a5a5f5a5f%3A0x5f5f5f5f5f5f5f5f!2sJl.%20Sam%20Ratulangi%2C%20Manado!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Pesan untuk Kami</h2>
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="message-name">Nama Anda</label>
+                        <input type="text" id="message-name" name="message-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-email">Email</label>
+                        <input type="email" id="message-email" name="message-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-subject">Subjek</label>
+                        <input type="text" id="message-subject" name="message-subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message-content">Pesan</label>
+                        <textarea id="message-content" name="message-content" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="logo-white.png" alt="SINI CAFÉ Logo">
+                <h3>SINI CAFÉ</h3>
+                <p>Good Coffee, Good Times</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#spaces">Ruang Kami</a></li>
+                    <li><a href="#events">Acara</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Sam Ratulangi, Manado</p>
+                <p><i class="fas fa-phone-alt"></i> (0431) 1234567</p>
+                <p><i class="fas fa-envelope"></i> hello@sinicafe.com</p>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Dapatkan info promo dan acara terbaru kami</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Alamat email Anda" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 SINI CAFÉ. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
